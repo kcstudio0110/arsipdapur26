@@ -1,0 +1,29 @@
+# Auto detect text files and normalize to LF
+* text=auto eol=lf
+
+# Source Code
+*.py text
+*.js text
+*.jsx text
+*.ts text
+*.tsx text
+*.css text
+*.scss text
+*.html text
+*.json text
+*.md text
+*.yml text
+*.yaml text
+
+# Windows Scripts
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Binary Files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.zip binary
