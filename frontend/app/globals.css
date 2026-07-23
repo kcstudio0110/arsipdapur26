@@ -80,10 +80,6 @@
     --transition-slow: 350ms ease;
 }
 
-.test-white {
-    color: white;
-}
-
 /* =========================================================
  * Typography
  * =======================================================*/
@@ -134,7 +130,6 @@ body {
  * =======================================================*/
 
 a {
-    color: inherit;
     text-decoration: none;
 
     transition: var(--transition-fast);

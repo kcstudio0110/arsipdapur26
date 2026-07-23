@@ -1,38 +1,46 @@
-import Link from "next/link";
 import { Logo } from "@/components/branding";
+import { Button } from "@/components/ui";
 
 export default function NotFound() {
     return (
-        <main className="flex min-h-screen flex-col bg-[var(--background)]">
-            <section className="flex flex-1 items-center justify-center px-6 py-16">
-                <div className="w-full max-w-xl text-center">
-                    <Logo layout="square" variant="brown" width={100} />
+        <main className="min-h-dvh bg-[var(--background)]">
+            <section className="grid min-h-dvh grid-rows-[1fr_auto_1fr] px-6 py-12">
+                {/* Logo */}
+                <div className="flex items-end justify-center pb-2">
+                    <Logo layout="square" variant="brown" width={140} />
+                </div>
 
-                    <h1 className="type-heading text-4xl font-bold text-[var(--font-primary)] md:text-5xl">
+                {/* Content */}
+                <div className="mx-auto flex w-full max-w-lg flex-col items-center text-center">
+                    <p className="text-sm font-medium tracking-[0.25em] text-[var(--font-secondary)] uppercase">
+                        Error 404
+                    </p>
+
+                    <h1 className="type-heading mt-1 text-5xl font-bold text-[var(--font-primary)] md:text-6xl">
                         Oops!
                     </h1>
 
-                    <p className="mt-6 text-base leading-8 text-[var(--font-secondary)]">
-                        Maaf, halaman yang Anda cari tidak tersedia atau telah dipindahkan.
+                    <p className="mt-6 max-w-md text-base leading-relaxed text-[var(--font-secondary)]">
+                        Maaf, halaman yang Anda cari tidak dapat ditemukan.
                     </p>
 
-                    <p className="mt-2 text-base leading-8 text-[var(--font-secondary)]">
-                        Silakan jelajahi Arsip Dapur 26 untuk melihat produk, marketplace, dan
-                        informasi terbaru.
+                    <p className="mt-2 max-w-md text-base leading-tight text-[var(--font-secondary)]">
+                        Yuk kembali menjelajahi Arsip Dapur 26 dan temukan berbagai produk, cerita,
+                        serta informasi terbaru.
                     </p>
 
-                    {/* <Link
+                    <Button
                         href="https://linktr.ee/arsipdapur26"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="mt-10 inline-flex h-12 items-center justify-center rounded-xl bg-[var(--button-secondary)] px-8 font-medium !text-[#ffffff] transition-all duration-300 hover:bg-[var(--button-secondary-hover)] hover:shadow-lg"
+                        external
+                        variant="secondary"
+                        className="mt-10 hover:-translate-y-0.5 hover:shadow-lg"
                     >
                         Jelajahi Arsip Dapur 26
-                    </Link> */}
-                    <Link href="#" className="bg-[var(--button-secondary)] px-8 py-3 text-white">
-                        TEST
-                    </Link>
+                    </Button>
                 </div>
+
+                {/* Spacer */}
+                <div />
             </section>
         </main>
     );
