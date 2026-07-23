@@ -15,11 +15,14 @@ export default function Logo({
     className = "",
 }: LogoProps) {
     return (
-        <img
-            src={`/images/ArsipDapur-logo-${layout}-${variant}.svg`}
-            alt="Arsip Dapur 26"
-            width={width}
-            className={`block h-auto ${className}`}
-        />
+        <>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+                src={`/images/ArsipDapur-logo-${layout}-${variant}.svg`}
+                alt="Arsip Dapur 26"
+                width={width}
+                className={`block h-auto ${className}`}
+            />
+        </>
     );
 }
