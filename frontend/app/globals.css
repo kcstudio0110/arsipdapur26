@@ -6,52 +6,60 @@
 
 :root {
     /* =====================================================
-     * Background
-     * ===================================================*/
+    * Background
+    * ===================================================*/
 
-    --background: #f8f5f0;
+    --background: #f9f4ed;
 
     /* =====================================================
-     * Surface
-     * Cards, Sections, Containers
-     * ===================================================*/
+    * Surface
+    * ===================================================*/
 
     --surface-primary: #ffffff;
-    --surface-secondary: #fdfbf8;
+    --surface-secondary: #fcf8f3;
 
     /* =====================================================
-     * Brand Colors
-     * ===================================================*/
+    * Brand
+    * ===================================================*/
 
-    --primary: #3d4a35;
-    --primary-hover: #4a5a41;
+    --primary: #67231a;
+    --primary-hover: #7b2a1f;
 
-    --secondary: #b88447;
-    --secondary-hover: #c69454;
+    --secondary: #b5651d;
+    --secondary-hover: #c7772d;
 
     /* =====================================================
-     * Typography
-     * ===================================================*/
+    * Logo Colors
+    * ===================================================*/
 
-    --font-primary: #2f2a24;
-    --font-secondary: #726a60;
+    --logo-onion: #a96440;
+    --logo-leaf: #787759;
+    --logo-text: #4a3f35;
+    --logo-accent: #b5651d;
+
+    /* =====================================================
+    * Typography
+    * ===================================================*/
+
+    --font-primary: #4a3f35;
+    --font-secondary: #7a6d63;
     --font-inverse: #ffffff;
 
     /* =====================================================
-     * Borders
-     * ===================================================*/
+    * Borders
+    * ===================================================*/
 
-    --border-primary: #e5ddd0;
-    --border-secondary: #d8cfbf;
+    --border-primary: #e8ddd1;
+    --border-secondary: #dccfc1;
 
     /* =====================================================
      * Status Colors
      * ===================================================*/
 
-    --success: #3b7d4f;
-    --warning: #c48d27;
+    --success: #5d7653;
+    --warning: #c78d3c;
     --danger: #b84b4b;
-    --info: #5a84c7;
+    --info: #6d89b6;
 
     /* =====================================================
      * Buttons
@@ -60,8 +68,16 @@
     --button-primary: var(--primary);
     --button-primary-hover: var(--primary-hover);
 
-    --button-secondary: var(--secondary);
-    --button-secondary-hover: var(--secondary-hover);
+    --button-secondary: transparent;
+    --button-secondary-hover: #f3eae1;
+
+    /* =====================================================
+    * Utility
+    * ===================================================*/
+
+    --cream: #f9f4ed;
+    --cream-dark: #efe5da;
+    --white-soft: #fffdfc;
 
     /* =====================================================
      * Shadow
@@ -135,17 +151,6 @@ a {
     transition: var(--transition-fast);
 }
 
-button,
-input,
-textarea,
-select {
-    font: inherit;
-}
-
-button {
-    cursor: pointer;
-}
-
 img {
     display: block;
     max-width: 100%;
@@ -161,7 +166,7 @@ svg {
  * =======================================================*/
 
 ::selection {
-    background: var(--secondary);
+    background: var(--primary);
     color: var(--font-inverse);
 }
 
@@ -178,12 +183,11 @@ svg {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--secondary);
-    border-radius: 999px;
+    background: var(--primary);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--secondary-hover);
+    background: var(--primary-hover);
 }
 
 /* =========================================================

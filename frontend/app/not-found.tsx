@@ -1,5 +1,5 @@
-import { Logo } from "@/components/branding";
-import { Button } from "@/components/ui";
+import { Logo } from "@/components/branding/Logo/index";
+import { Button } from "@/components/ui/Button";
 
 export default function NotFound() {
     return (
@@ -32,7 +32,7 @@ export default function NotFound() {
                     <Button
                         href="https://linktr.ee/arsipdapur26"
                         external
-                        variant="secondary"
+                        variant="primary"
                         className="mt-10 hover:-translate-y-0.5 hover:shadow-lg"
                     >
                         Jelajahi Arsip Dapur 26

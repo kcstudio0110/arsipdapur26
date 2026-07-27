@@ -2,8 +2,19 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-    title: "Arsip Dapur 26",
+    title: {
+        default: "Arsip Dapur 26",
+        template: "%s | Arsip Dapur 26",
+    },
     description: "Rasa Lama, Cara Baru.",
+
+    icons: {
+        icon: "/branding/favicon/favicon.ico",
+
+        apple: "/branding/app-icons/apple-touch-icon.png",
+    },
+
+    manifest: "/site.webmanifest",
 };
 
 interface RootLayoutProps {

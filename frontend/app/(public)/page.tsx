@@ -1,7 +1,16 @@
+import { Hero } from "@/components/sections/Hero";
+
+import { Navbar } from "@/components/layout/Navbar";
+import { Social } from "@/components/sections/Social";
+
 export default function HomePage() {
     return (
-        <main>
-            <h1>Arsip Dapur 26</h1>
-        </main>
+        <>
+            <Navbar />
+
+            <Hero />
+
+            <Social />
+        </>
     );
 }

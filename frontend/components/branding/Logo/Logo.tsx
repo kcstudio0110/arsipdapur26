@@ -1,24 +1,17 @@
-type LogoLayout = "horizontal" | "square";
-type LogoVariant = "brown" | "cream";
+import type { LogoProps } from "./Logo.types";
+import { LOGO_WIDTH } from "./Logo.constants";
 
-interface LogoProps {
-    layout?: LogoLayout;
-    variant?: LogoVariant;
-    width?: number;
-    className?: string;
-}
-
-export default function Logo({
+export function Logo({
     layout = "horizontal",
     variant = "brown",
-    width = 180,
+    width = LOGO_WIDTH.HEADER,
     className = "",
 }: LogoProps) {
     return (
         <>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-                src={`/images/ArsipDapur-logo-${layout}-${variant}.svg`}
+                src={`branding/logo/ArsipDapur-logo-${layout}-${variant}.svg`}
                 alt="Arsip Dapur 26"
                 width={width}
                 className={`block h-auto ${className}`}
