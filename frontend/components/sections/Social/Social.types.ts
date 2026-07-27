@@ -1,3 +1,5 @@
+import { IconName } from "@/components/ui/Icon";
+
 export interface SocialItem {
     id: string;
 
@@ -5,7 +7,9 @@ export interface SocialItem {
 
     description: string;
 
-    icon: string;
+    icon: IconName;
+
+    action: string;
 
     href: string;
 }
@@ -18,6 +22,4 @@ export interface SocialConfig {
     title: string;
 
     description?: string;
-
-    items: SocialItem[];
 }

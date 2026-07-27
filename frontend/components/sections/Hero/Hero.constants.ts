@@ -25,7 +25,7 @@ export const HERO_CONFIG: HeroConfig = {
     },
 
     content: {
-        title: "Rasa Lama, Cara Baru.",
+        title: "Rasa Lama,\nCara Baru.",
 
         description:
             "Masakan Indonesia yang praktis tanpa mengorbankan cita rasa asli.\nSiap disimpan di freezer dan dinikmati kapan saja.",

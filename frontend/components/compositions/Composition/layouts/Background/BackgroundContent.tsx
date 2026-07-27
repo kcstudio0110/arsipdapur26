@@ -39,7 +39,11 @@ export function BackgroundContent({
                     </Typography>
                 )}
 
-                <Typography as="h1" variant={TYPOGRAPHY_VARIANTS.DISPLAY}>
+                <Typography
+                    as="h1"
+                    variant={TYPOGRAPHY_VARIANTS.DISPLAY}
+                    className="whitespace-pre-line"
+                >
                     {config.title}
                 </Typography>
 

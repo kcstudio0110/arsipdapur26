@@ -9,7 +9,10 @@ import {
     MapPinIcon,
     PhoneIcon,
     ShoppingCartIcon,
+    ShoppingBagIcon,
     XIcon,
+    InstagramLogoIcon,
+    WhatsappLogoIcon,
 } from "@phosphor-icons/react";
 
 export const ICONS = {
@@ -27,6 +30,11 @@ export const ICONS = {
     // Action
     search: MagnifyingGlassIcon,
     cart: ShoppingCartIcon,
+    shoppingBag: ShoppingBagIcon,
+
+    // Social
+    instagram: InstagramLogoIcon,
+    whatsapp: WhatsappLogoIcon,
 
     // Contact
     phone: PhoneIcon,
