@@ -1,5 +1,6 @@
 import { LINKS } from "@/config/links.config";
 import type { SocialConfig, SocialItem } from "./Social.types";
+import { PLATFORM_COLORS_CLASS } from "@/constants/colors";
 
 export const SOCIAL_CONFIG: SocialConfig = {
     id: "social",
@@ -19,6 +20,7 @@ export const SOCIAL_ITEMS: SocialItem[] = [
         icon: "instagram",
         action: "Kunjungi",
         href: LINKS.social.instagram,
+        brandColorClass: PLATFORM_COLORS_CLASS.instagram,
     },
     {
         id: "whatsapp",
@@ -27,14 +29,7 @@ export const SOCIAL_ITEMS: SocialItem[] = [
         icon: "whatsapp",
         action: "Chat",
         href: LINKS.social.whatsapp,
-    },
-    {
-        id: "tokopedia",
-        title: "Tokopedia",
-        description: "Belanja produk Arsip Dapur 26 melalui Tokopedia.",
-        icon: "shoppingBag",
-        action: "Belanja",
-        href: LINKS.social.tokopedia,
+        brandColorClass: PLATFORM_COLORS_CLASS.whatsapp,
     },
     {
         id: "shopee",
@@ -43,5 +38,15 @@ export const SOCIAL_ITEMS: SocialItem[] = [
         icon: "shoppingBag",
         action: "Belanja",
         href: LINKS.social.shopee,
+        brandColorClass: PLATFORM_COLORS_CLASS.shopee,
+    },
+    {
+        id: "tokopedia",
+        title: "Tokopedia",
+        description: "Belanja produk Arsip Dapur 26 melalui Tokopedia.",
+        icon: "shoppingBag",
+        action: "Belanja",
+        href: LINKS.social.tokopedia,
+        brandColorClass: PLATFORM_COLORS_CLASS.tokopedia,
     },
 ];

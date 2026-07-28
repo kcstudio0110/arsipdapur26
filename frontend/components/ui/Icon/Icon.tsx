@@ -13,8 +13,5 @@ export function Icon({
 }: IconProps) {
     const Component = ICONS[name];
 
-    console.log(name);
-    console.log(Component);
-
     return <Component size={size} weight={weight} mirrored={mirrored} {...props} />;
 }

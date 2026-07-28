@@ -41,7 +41,7 @@ export const HERO_CONFIG: HeroConfig = {
             {
                 label: "Belanja Sekarang",
                 href: LINKS.internal.social,
-                variant: "primary",
+                variant: "outline",
                 startIcon: "shoppingBag",
             },
         ],

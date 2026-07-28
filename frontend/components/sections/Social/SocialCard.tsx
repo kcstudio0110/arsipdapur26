@@ -5,6 +5,7 @@ import { Icon } from "@/components/ui/Icon";
 import { Typography, TYPOGRAPHY_VARIANTS } from "@/components/ui/Typography";
 
 import type { SocialItem } from "./Social.types";
+import { cn } from "@/lib/cn";
 
 interface SocialCardProps {
     item: SocialItem;
@@ -12,12 +13,16 @@ interface SocialCardProps {
 
 export function SocialCard({ item }: SocialCardProps) {
     return (
-        <Link href={item.href}>
+        <Link href={item.href} className="group">
             <Card className="flex h-full flex-col gap-4 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
-                <Icon name={item.icon} size={48} />
+                <div className={item.brandColorClass}>
+                    <Icon name={item.icon} size={48} />
+                </div>
 
                 <div className="flex flex-1 flex-col gap-2">
-                    <Typography variant={TYPOGRAPHY_VARIANTS.TITLE}>{item.title}</Typography>
+                    <div className={item.brandColorClass}>
+                        <Typography variant={TYPOGRAPHY_VARIANTS.TITLE}>{item.title}</Typography>
+                    </div>
 
                     <Typography variant={TYPOGRAPHY_VARIANTS.BODY} className="italic">
                         {item.description}

@@ -37,7 +37,7 @@ export const BUTTON_VARIANTS: Record<ButtonVariant, string> = {
         "bg-[var(--button-secondary)] text-[var(--font-inverse)] hover:bg-[var(--button-secondary-hover)]",
 
     outline:
-        "border border-[var(--border-primary)] bg-transparent text-[var(--font-primary)] hover:bg-[var(--surface-secondary)]",
+        "border border-[var(--border-secondary)] border-2 bg-transparent text-[var(--font-primary)] hover:bg-[var(--surface-secondary)]",
 
     ghost: "bg-transparent text-[var(--font-primary)] hover:bg-[var(--surface-secondary)]",
 

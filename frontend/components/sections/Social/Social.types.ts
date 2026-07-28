@@ -1,4 +1,5 @@
 import { IconName } from "@/components/ui/Icon";
+import { PlatformColorClass } from "@/constants/colors";
 
 export interface SocialItem {
     id: string;
@@ -12,6 +13,8 @@ export interface SocialItem {
     action: string;
 
     href: string;
+
+    brandColorClass: PlatformColorClass;
 }
 
 export interface SocialConfig {
