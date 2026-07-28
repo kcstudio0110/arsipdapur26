@@ -13,13 +13,15 @@ interface SocialCardProps {
 export function SocialCard({ item }: SocialCardProps) {
     return (
         <Link href={item.href}>
-            <Card className="flex h-full flex-col gap-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+            <Card className="flex h-full flex-col gap-4 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
                 <Icon name={item.icon} size={48} />
 
-                <div className="flex flex-1 flex-col gap-3">
-                    <Typography variant={TYPOGRAPHY_VARIANTS.HEADING}>{item.title}</Typography>
+                <div className="flex flex-1 flex-col gap-2">
+                    <Typography variant={TYPOGRAPHY_VARIANTS.TITLE}>{item.title}</Typography>
 
-                    <Typography variant={TYPOGRAPHY_VARIANTS.BODY}>{item.description}</Typography>
+                    <Typography variant={TYPOGRAPHY_VARIANTS.BODY} className="italic">
+                        {item.description}
+                    </Typography>
                 </div>
 
                 <div className="flex items-center justify-between border-t pt-4">

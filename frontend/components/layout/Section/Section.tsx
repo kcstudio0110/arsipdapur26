@@ -14,7 +14,7 @@ export function Section({
     background = "bg-[var(--background)]",
 }: SectionProps) {
     return (
-        <section id={id} className={` ${background} py-10 lg:py-18 ${className} `}>
+        <section id={id} className={` ${background} py-10 ${className} `}>
             {children}
         </section>
     );

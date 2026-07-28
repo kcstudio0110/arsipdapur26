@@ -17,6 +17,9 @@ export function Button({
 
     fullWidth = false,
 
+    startIcon,
+    endIcon,
+
     className,
 
     type = "button",
@@ -37,6 +40,16 @@ export function Button({
         className,
     );
 
+    const content = (
+        <>
+            {startIcon}
+
+            {children}
+
+            {endIcon}
+        </>
+    );
+
     if (href) {
         return (
             <Link
@@ -45,14 +58,14 @@ export function Button({
                 rel={external ? "noopener noreferrer" : undefined}
                 className={classes}
             >
-                {children}
+                {content}
             </Link>
         );
     }
 
     return (
         <button type={type} onClick={onClick} className={classes} {...props}>
-            {children}
+            {content}
         </button>
     );
 }

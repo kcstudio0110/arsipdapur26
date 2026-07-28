@@ -1,3 +1,5 @@
+"use client";
+
 import { Section } from "@/components/layout/Section";
 
 import { Typography, TYPOGRAPHY_VARIANTS } from "@/components/ui/Typography";
@@ -9,7 +11,7 @@ export function Social() {
     const { id, eyebrow, title, description } = SOCIAL_CONFIG;
 
     return (
-        <Section id={id}>
+        <Section id={id} className="px-5">
             <div className="mx-auto max-w-3xl text-center">
                 {eyebrow && (
                     <Typography variant={TYPOGRAPHY_VARIANTS.OVERLINE}>{eyebrow}</Typography>
@@ -22,7 +24,7 @@ export function Social() {
                 )}
             </div>
 
-            <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+            <div className="mx-auto mt-8 grid max-w-5xl sm:grid-cols-2 sm:gap-5 md:grid-cols-4 xl:gap-10">
                 {SOCIAL_ITEMS.map((item) => (
                     <SocialCard key={item.id} item={item} />
                 ))}

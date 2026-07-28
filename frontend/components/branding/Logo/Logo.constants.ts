@@ -1,5 +1,5 @@
 export const LOGO_WIDTH = {
-    HEADER: 180,
+    HEADER: 200,
     HERO: 260,
     LOGIN: 220,
     QR: 180,

@@ -1,3 +1,5 @@
+"use client";
+
 import { Container } from "@/components/layout/Container";
 
 import { Logo, LOGO_WIDTH } from "@/components/branding/Logo";
@@ -11,6 +13,8 @@ import type { NavbarProps } from "./Navbar.types";
 import { Link } from "@/components/ui/Link";
 import { cn } from "@/lib/cn";
 import { LAYOUT_WIDTHS } from "../Layout.constants";
+import { LINKS } from "@/config/links.config";
+import { Icon } from "@/components/ui/Icon";
 
 export function NavbarDesktop({ className = "" }: NavbarProps) {
     return (
@@ -46,7 +50,12 @@ export function NavbarDesktop({ className = "" }: NavbarProps) {
                     </nav>
 
                     {/* CTA */}
-                    <Button variant="primary" size="sm">
+                    <Button
+                        variant="primary"
+                        size="sm"
+                        startIcon={<Icon name="whatsapp" />}
+                        href={LINKS.social.whatsapp}
+                    >
                         Hubungi Kami
                     </Button>
                 </div>

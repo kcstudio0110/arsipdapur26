@@ -4,9 +4,20 @@ import type { BaseCompositionConfig, CompositionProps } from "../../Composition.
 
 import type { BackgroundAlignment, BackgroundAreaWidth } from "./Background.constants";
 
+import type { IconName } from "@/components/ui/Icon";
+
+import { ButtonSize, ButtonVariant } from "@/components/ui/Button/Button.types";
+
 export interface BackgroundButton {
     label: string;
+
     href: string;
+
+    variant?: ButtonVariant;
+    size?: ButtonSize;
+
+    startIcon?: IconName;
+    endIcon?: IconName;
 }
 
 export interface BackgroundContentConfig {

@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from "@/components/ui/Button";
 import { Typography, TYPOGRAPHY_VARIANTS } from "@/components/ui/Typography";
 import { cn } from "@/lib/cn";
@@ -11,6 +13,7 @@ import {
 } from "./Background.constants";
 
 import type { BackgroundContentConfig, BackgroundContentLayout } from "./Background.types";
+import { Icon } from "@/components/ui/Icon";
 
 type Props = {
     config: BackgroundContentConfig;
@@ -60,7 +63,14 @@ export function BackgroundContent({
                 {config.buttons && config.buttons.length > 0 && (
                     <div className="mt-8 flex flex-wrap gap-3">
                         {config.buttons.map((button) => (
-                            <Button key={button.href} href={button.href} size="sm">
+                            <Button
+                                key={button.href}
+                                href={button.href}
+                                size={button.size ?? "sm"}
+                                variant={button.variant}
+                                startIcon={button.startIcon && <Icon name={button.startIcon} />}
+                                endIcon={button.endIcon && <Icon name={button.endIcon} />}
+                            >
                                 {button.label}
                             </Button>
                         ))}

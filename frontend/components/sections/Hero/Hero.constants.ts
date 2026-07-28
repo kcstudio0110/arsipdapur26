@@ -4,6 +4,7 @@ import {
 } from "@/components/compositions/Composition/layouts/Background";
 
 import type { HeroConfig } from "./Hero.types";
+import { LINKS } from "@/config/links.config";
 
 export const HERO_CONFIG: HeroConfig = {
     id: "home-hero",
@@ -32,12 +33,16 @@ export const HERO_CONFIG: HeroConfig = {
 
         buttons: [
             {
-                label: "Lihat Produk",
-                href: "/products",
+                label: "Hubungi Kami",
+                href: LINKS.social.whatsapp,
+                variant: "primary",
+                startIcon: "whatsapp",
             },
             {
-                label: "Tentang Kami",
-                href: "/about",
+                label: "Belanja Sekarang",
+                href: LINKS.internal.social,
+                variant: "primary",
+                startIcon: "shoppingBag",
             },
         ],
     },

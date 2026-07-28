@@ -1,2 +1,2 @@
 export const CARD_BASE =
-    "rounded-3xl border border-[var(--border-primary)] p-8 bg-[var(--surface-primary)] shadow-sm";
+    "rounded-3xl border border-[var(--border-primary)] p-8 bg-[var(--surface-social-card)] shadow-sm";

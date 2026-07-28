@@ -1,23 +1,24 @@
+import { LINKS } from "@/config/links.config";
 import type { SocialConfig, SocialItem } from "./Social.types";
 
 export const SOCIAL_CONFIG: SocialConfig = {
     id: "social",
 
-    eyebrow: "Temukan Kami",
+    eyebrow: "Mulai dari Sini",
 
-    title: "Platform Favoritmu",
+    title: "Pilih Platform Favoritmu",
 
-    description: "Ikuti perjalanan Arsip Dapur 26 atau pesan langsung melalui platform favoritmu.",
+    description: "Hubungi kami langsung atau belanja melalui marketplace favoritmu.",
 };
 
 export const SOCIAL_ITEMS: SocialItem[] = [
     {
         id: "instagram",
         title: "Instagram",
-        description: "Ikuti resep, promo, dan cerita terbaru dari dapur kami.",
+        description: "Temukan inspirasi, promo, dan cerita dari dapur kami.",
         icon: "instagram",
         action: "Kunjungi",
-        href: "#",
+        href: LINKS.social.instagram,
     },
     {
         id: "whatsapp",
@@ -25,7 +26,7 @@ export const SOCIAL_ITEMS: SocialItem[] = [
         description: "Hubungi kami langsung untuk bertanya atau melakukan pemesanan.",
         icon: "whatsapp",
         action: "Chat",
-        href: "#",
+        href: LINKS.social.whatsapp,
     },
     {
         id: "tokopedia",
@@ -33,7 +34,7 @@ export const SOCIAL_ITEMS: SocialItem[] = [
         description: "Belanja produk Arsip Dapur 26 melalui Tokopedia.",
         icon: "shoppingBag",
         action: "Belanja",
-        href: "#",
+        href: LINKS.social.tokopedia,
     },
     {
         id: "shopee",
@@ -41,6 +42,6 @@ export const SOCIAL_ITEMS: SocialItem[] = [
         description: "Belanja produk Arsip Dapur 26 melalui Shopee.",
         icon: "shoppingBag",
         action: "Belanja",
-        href: "#",
+        href: LINKS.social.shopee,
     },
 ];
