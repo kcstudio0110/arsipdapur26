@@ -12,7 +12,7 @@ export function Social() {
 
     return (
         <Section id={id} className="px-5">
-            <div className="mx-auto max-w-3xl text-center">
+            <div className="mx-auto max-w-5xl text-center">
                 {eyebrow && (
                     <Typography variant={TYPOGRAPHY_VARIANTS.OVERLINE}>{eyebrow}</Typography>
                 )}
