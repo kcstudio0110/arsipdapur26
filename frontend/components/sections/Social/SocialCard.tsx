@@ -5,7 +5,6 @@ import { Icon } from "@/components/ui/Icon";
 import { Typography, TYPOGRAPHY_VARIANTS } from "@/components/ui/Typography";
 
 import type { SocialItem } from "./Social.types";
-import { cn } from "@/lib/cn";
 
 interface SocialCardProps {
     item: SocialItem;

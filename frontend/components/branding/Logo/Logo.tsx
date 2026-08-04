@@ -1,5 +1,6 @@
 import type { LogoProps } from "./Logo.types";
 import { LOGO_WIDTH } from "./Logo.constants";
+import { LOGO } from "@/config/logo.config";
 
 export function Logo({
     layout = "horizontal",
@@ -7,11 +8,12 @@ export function Logo({
     width = LOGO_WIDTH.HEADER,
     className = "",
 }: LogoProps) {
+    const logoKey = `${layout}-${variant}` as keyof typeof LOGO;
     return (
         <>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-                src={`branding/logo/ArsipDapur-logo-${layout}-${variant}.svg`}
+                src={LOGO[logoKey]}
                 alt="Arsip Dapur 26"
                 width={width}
                 className={`block h-auto ${className}`}

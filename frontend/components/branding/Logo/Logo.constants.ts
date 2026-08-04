@@ -3,7 +3,7 @@ export const LOGO_WIDTH = {
     HERO: 260,
     LOGIN: 220,
     QR: 180,
-    FOOTER: 160,
+    FOOTER: 200,
     SIDEBAR: 140,
 } as const;
 

@@ -42,4 +42,4 @@ export interface ImageOptions {
     blurDataURL?: string;
 }
 
-export interface ImageProps extends NextImageProps {}
+export type ImageProps = NextImageProps;

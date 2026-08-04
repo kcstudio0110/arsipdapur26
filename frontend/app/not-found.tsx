@@ -1,5 +1,6 @@
 import { Logo } from "@/components/branding/Logo/index";
 import { Button } from "@/components/ui/Button";
+import { SITE } from "@/config/site.config";
 
 export default function NotFound() {
     return (
@@ -30,7 +31,7 @@ export default function NotFound() {
                     </p>
 
                     <Button
-                        href="https://linktr.ee/arsipdapur26"
+                        href={SITE.url}
                         external
                         variant="primary"
                         className="mt-10 hover:-translate-y-0.5 hover:shadow-lg"

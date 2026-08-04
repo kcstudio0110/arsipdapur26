@@ -1,4 +1,3 @@
-import { Container } from "@/components/layout/Container";
 import { cn } from "@/lib/cn";
 
 import { BACKGROUND_OVERLAY_WIDTH_CLASSES, BACKGROUND_AREA_WIDTHS } from "./Background.constants";

@@ -1,21 +1,16 @@
 import type { Metadata } from "next";
+
 import "./globals.css";
 
-export const metadata: Metadata = {
-    title: {
-        default: "Arsip Dapur 26",
-        template: "%s | Arsip Dapur 26",
-    },
-    description: "Rasa Lama, Cara Baru.",
+import { cn } from "@/lib/cn";
+import { DEFAULT_METADATA } from "@/config/seo.config";
 
-    icons: {
-        icon: "/branding/favicon/favicon.ico",
+import { inter, playfair, handwritten, google_sans } from "@/lib/fonts";
+import { SITE } from "@/config/site.config";
+import { OrganizationJsonLd } from "@/components/seo/OrganizationJsonLd";
+import { WebsiteJsonLd } from "@/components/seo/WebsiteJsonLd";
 
-        apple: "/branding/app-icons/apple-touch-icon.png",
-    },
-
-    manifest: "/site.webmanifest",
-};
+export const metadata: Metadata = DEFAULT_METADATA;
 
 interface RootLayoutProps {
     children: React.ReactNode;
@@ -23,8 +18,20 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
     return (
-        <html lang="id">
-            <body>{children}</body>
+        <html lang={SITE.language}>
+            <body
+                className={cn(
+                    inter.variable,
+                    playfair.variable,
+                    handwritten.variable,
+                    google_sans.variable,
+                )}
+            >
+                <OrganizationJsonLd />
+                <WebsiteJsonLd />
+
+                {children}
+            </body>
         </html>
     );
 }
