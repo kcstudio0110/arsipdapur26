@@ -1,7 +1,9 @@
 "use client";
 
 import { Button } from "@/components/ui/Button";
+import { Icon } from "@/components/ui/Icon";
 import { Typography, TYPOGRAPHY_VARIANTS } from "@/components/ui/Typography";
+
 import { cn } from "@/lib/cn";
 
 import {
@@ -13,7 +15,6 @@ import {
 } from "./Background.constants";
 
 import type { BackgroundContentConfig, BackgroundContentLayout } from "./Background.types";
-import { Icon } from "@/components/ui/Icon";
 
 type Props = {
     config: BackgroundContentConfig;
@@ -31,11 +32,11 @@ export function BackgroundContent({
     return (
         <div
             className={cn(
-                "flex flex-1 flex-col justify-center gap-6",
+                "flex flex-1 flex-col justify-center gap-4 lg:gap-6",
                 BACKGROUND_ALIGNMENT_CLASSES[alignment],
             )}
         >
-            <div className={BACKGROUND_CONTENT_WIDTH_CLASSES[width]}>
+            <div className={cn("w-full", BACKGROUND_CONTENT_WIDTH_CLASSES[width])}>
                 {config.eyebrow && (
                     <Typography as="p" variant={TYPOGRAPHY_VARIANTS.OVERLINE}>
                         {config.eyebrow}
@@ -54,14 +55,14 @@ export function BackgroundContent({
                     <Typography
                         as="p"
                         variant={TYPOGRAPHY_VARIANTS.BODY}
-                        className="mt-3 pl-2 whitespace-pre-line italic"
+                        className="mt-2 pl-2 whitespace-pre-line italic lg:mt-3"
                     >
                         {config.description}
                     </Typography>
                 )}
 
                 {config.buttons && config.buttons.length > 0 && (
-                    <div className="mt-8 flex flex-wrap gap-3">
+                    <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap lg:mt-8">
                         {config.buttons.map((button) => (
                             <Button
                                 key={button.href}
@@ -70,6 +71,7 @@ export function BackgroundContent({
                                 variant={button.variant}
                                 startIcon={button.startIcon && <Icon name={button.startIcon} />}
                                 endIcon={button.endIcon && <Icon name={button.endIcon} />}
+                                className="w-full sm:w-auto"
                             >
                                 {button.label}
                             </Button>
