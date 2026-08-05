@@ -2,9 +2,6 @@
 
 import { Container } from "@/components/layout/Container";
 
-import { Logo, LOGO_SIZE } from "@/components/branding/Logo";
-
-import { Button } from "@/components/ui/Button";
 import { Typography, TYPOGRAPHY_VARIANTS } from "@/components/ui/Typography";
 
 import { NAVBAR_ITEMS } from "./Navbar.constants";
@@ -15,6 +12,8 @@ import { cn } from "@/lib/cn";
 import { LAYOUT_WIDTHS } from "../Layout.constants";
 import { LINKS } from "@/config/links.config";
 import { Icon } from "@/components/ui/Icon";
+import { Button } from "../../ui/Button";
+import { Logo, LOGO_SIZE } from "../../branding/Logo";
 
 export function NavbarDesktop({ className = "" }: NavbarProps) {
     return (

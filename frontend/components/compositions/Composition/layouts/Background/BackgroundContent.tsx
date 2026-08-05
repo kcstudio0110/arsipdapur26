@@ -1,6 +1,5 @@
 "use client";
 
-import { Button } from "@/components/ui/Button";
 import { Icon } from "@/components/ui/Icon";
 import { Typography, TYPOGRAPHY_VARIANTS } from "@/components/ui/Typography";
 
@@ -17,6 +16,7 @@ import type { BackgroundAlignment } from "./Background.constants";
 import type { BackgroundContentConfig } from "./Background.types";
 
 import type { LayoutDesktopPreset, LayoutMobilePreset } from "../../presets";
+import { Button } from "@/components/ui/Button/Button";
 
 type Props = {
     config: BackgroundContentConfig;
