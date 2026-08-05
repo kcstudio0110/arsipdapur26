@@ -11,13 +11,13 @@ export const LINKS = {
         social: "#social",
     },
 
-    social: {
-        instagram: "https://www.instagram.com/arsipdapur26",
+    redirect: {
+        whatsapp: "/wa",
 
-        whatsapp: "https://bit.ly/genjuspice",
+        instagram: "/instagram",
 
-        tokopedia: "http://www.tokopedia.com/genjuspice",
+        shopee: "/shopee",
 
-        shopee: "http://shopee.co.id/genju.spice",
+        tokopedia: "/tokopedia",
     },
 } as const;

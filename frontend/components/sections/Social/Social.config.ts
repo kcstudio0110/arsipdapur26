@@ -19,7 +19,7 @@ export const SOCIAL_ITEMS: SocialItem[] = [
         description: "Temukan inspirasi, promo, dan cerita dari dapur kami.",
         icon: "instagram",
         action: "Kunjungi",
-        href: LINKS.social.instagram,
+        href: LINKS.redirect.instagram,
         brandColorClass: PLATFORM_COLORS_CLASS.instagram,
     },
     {
@@ -28,7 +28,7 @@ export const SOCIAL_ITEMS: SocialItem[] = [
         description: "Hubungi kami langsung untuk bertanya atau melakukan pemesanan.",
         icon: "whatsapp",
         action: "Chat",
-        href: LINKS.social.whatsapp,
+        href: LINKS.redirect.whatsapp,
         brandColorClass: PLATFORM_COLORS_CLASS.whatsapp,
     },
     {
@@ -37,7 +37,7 @@ export const SOCIAL_ITEMS: SocialItem[] = [
         description: "Belanja produk Arsip Dapur 26 melalui Shopee.",
         icon: "shoppingBag",
         action: "Belanja",
-        href: LINKS.social.shopee,
+        href: LINKS.redirect.shopee,
         brandColorClass: PLATFORM_COLORS_CLASS.shopee,
     },
     {
@@ -46,7 +46,7 @@ export const SOCIAL_ITEMS: SocialItem[] = [
         description: "Belanja produk Arsip Dapur 26 melalui Tokopedia.",
         icon: "shoppingBag",
         action: "Belanja",
-        href: LINKS.social.tokopedia,
+        href: LINKS.redirect.tokopedia,
         brandColorClass: PLATFORM_COLORS_CLASS.tokopedia,
     },
 ];

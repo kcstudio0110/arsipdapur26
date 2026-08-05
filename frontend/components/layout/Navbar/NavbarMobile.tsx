@@ -4,7 +4,7 @@ import { useState } from "react";
 
 import { Container } from "@/components/layout/Container";
 
-import { Logo, LOGO_WIDTH } from "@/components/branding/Logo";
+import { Logo, LOGO_SIZE } from "@/components/branding/Logo";
 
 import { Button } from "@/components/ui/Button";
 import { Icon, ICON_SIZES } from "@/components/ui/Icon";
@@ -44,7 +44,7 @@ export function NavbarMobile({ className = "" }: NavbarProps) {
                 <div className="flex h-18 items-center justify-between">
                     {/* Logo */}
                     <Link href="/">
-                        <Logo width={LOGO_WIDTH.HEADER} />
+                        <Logo className={LOGO_SIZE.HEADER} />
                     </Link>
 
                     {/* Hamburger */}

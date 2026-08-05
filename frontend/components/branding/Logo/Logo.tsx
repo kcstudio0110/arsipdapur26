@@ -1,11 +1,11 @@
 import type { LogoProps } from "./Logo.types";
-import { LOGO_WIDTH } from "./Logo.constants";
+import { LOGO_SIZE } from "./Logo.constants";
 import { LOGO } from "@/config/logo.config";
 
 export function Logo({
     layout = "horizontal",
     variant = "brown",
-    width = LOGO_WIDTH.HEADER,
+    width = LOGO_SIZE.HEADER,
     className = "",
 }: LogoProps) {
     const logoKey = `${layout}-${variant}` as keyof typeof LOGO;

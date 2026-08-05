@@ -1,4 +1,4 @@
-import { Logo } from "@/components/branding/Logo/index";
+import { Logo, LOGO_SIZE } from "@/components/branding/Logo/index";
 import { Button } from "@/components/ui/Button";
 import { SITE } from "@/config/site.config";
 
@@ -8,7 +8,7 @@ export default function NotFound() {
             <section className="grid min-h-dvh grid-rows-[1fr_auto_1fr] px-6 py-12">
                 {/* Logo */}
                 <div className="flex items-end justify-center pb-2">
-                    <Logo layout="square" variant="brown" width={140} />
+                    <Logo layout="square" variant="brown" className={LOGO_SIZE.NOTFOUND} />
                 </div>
 
                 {/* Content */}

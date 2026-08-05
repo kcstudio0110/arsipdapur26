@@ -34,7 +34,7 @@ export const HERO_CONFIG: HeroConfig = {
         buttons: [
             {
                 label: "Hubungi Kami",
-                href: LINKS.social.whatsapp,
+                href: LINKS.redirect.whatsapp,
                 variant: "primary",
                 startIcon: "whatsapp",
             },

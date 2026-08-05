@@ -1,8 +1,7 @@
-import Link from "next/link";
-
+import { Link } from "@/components/ui/Link";
 import { FOOTER_CONFIG } from "./Footer.config";
 import { FOOTER_SPACING } from "./Footer.constants";
-import { Logo, LOGO_WIDTH } from "@/components/branding/Logo";
+import { Logo, LOGO_SIZE } from "@/components/branding/Logo";
 import { SITE } from "@/config/site.config";
 
 export function Footer() {
@@ -13,7 +12,7 @@ export function Footer() {
                     className={`mx-auto flex max-w-2xl flex-col items-center text-center ${FOOTER_SPACING.CONTENT}`}
                 >
                     {/* Logo */}
-                    <Logo variant="cream" width={LOGO_WIDTH.FOOTER} />
+                    <Logo variant="cream" className={LOGO_SIZE.FOOTER} />
 
                     {/* Tagline */}
                     <p className="font-script text-4xl">{SITE.tagline}</p>
@@ -24,11 +23,7 @@ export function Footer() {
                     {/* Social */}
                     <div className="flex items-center gap-3 pt-6 pb-2 opacity-90">
                         {FOOTER_CONFIG.socials.map((social) => (
-                            <Link
-                                key={social.label}
-                                href={social.href}
-                                className="hover:text-primary text-sm transition-colors"
-                            >
+                            <Link key={social.label} href={social.href} variant="inverse">
                                 {social.label}
                             </Link>
                         ))}

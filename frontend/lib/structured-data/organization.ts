@@ -15,5 +15,5 @@ export const ORGANIZATION_JSON_LD = {
 
     description: SITE.description,
 
-    sameAs: [LINKS.social.instagram, LINKS.social.shopee, LINKS.social.tokopedia],
+    sameAs: [LINKS.redirect.instagram, LINKS.redirect.shopee, LINKS.redirect.tokopedia],
 };

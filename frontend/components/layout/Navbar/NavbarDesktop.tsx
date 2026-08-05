@@ -2,7 +2,7 @@
 
 import { Container } from "@/components/layout/Container";
 
-import { Logo, LOGO_WIDTH } from "@/components/branding/Logo";
+import { Logo, LOGO_SIZE } from "@/components/branding/Logo";
 
 import { Button } from "@/components/ui/Button";
 import { Typography, TYPOGRAPHY_VARIANTS } from "@/components/ui/Typography";
@@ -31,7 +31,7 @@ export function NavbarDesktop({ className = "" }: NavbarProps) {
                 >
                     {/* Logo */}
                     <Link href="/">
-                        <Logo width={LOGO_WIDTH.HEADER} />
+                        <Logo className={LOGO_SIZE.HEADER} />
                     </Link>
 
                     {/* Navigation */}
@@ -54,7 +54,7 @@ export function NavbarDesktop({ className = "" }: NavbarProps) {
                         variant="primary"
                         size="sm"
                         startIcon={<Icon name="whatsapp" />}
-                        href={LINKS.social.whatsapp}
+                        href={LINKS.redirect.whatsapp}
                     >
                         Hubungi Kami
                     </Button>
