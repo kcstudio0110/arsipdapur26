@@ -1,7 +1,8 @@
 import { TYPOGRAPHY_VARIANTS } from "./Typography.constants";
 
 export const TYPOGRAPHY_STYLES = {
-    [TYPOGRAPHY_VARIANTS.DISPLAY]: "text-5xl lg:text-6xl 2xl:text-7xl font-bold tracking-tight",
+    [TYPOGRAPHY_VARIANTS.DISPLAY]:
+        "font-heading text-3xl lg:text-6xl 2xl:text-7xl font-bold tracking-tight",
 
     [TYPOGRAPHY_VARIANTS.HEADING]: "text-3xl lg:text-4xl 2xl:text-5xl font-bold",
 

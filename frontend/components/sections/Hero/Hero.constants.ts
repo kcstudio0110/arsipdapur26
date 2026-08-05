@@ -1,10 +1,6 @@
-import {
-    BACKGROUND_ALIGNMENTS,
-    BACKGROUND_AREA_WIDTHS,
-} from "@/components/compositions/Composition/layouts/Background";
-
 import type { HeroConfig } from "./Hero.types";
 import { LINKS } from "@/config/links.config";
+import { LAYOUTS } from "@/components/compositions/Composition/presets";
 
 export const HERO_CONFIG: HeroConfig = {
     id: "home-hero",
@@ -47,15 +43,5 @@ export const HERO_CONFIG: HeroConfig = {
         ],
     },
 
-    layout: {
-        alignment: BACKGROUND_ALIGNMENTS.START,
-
-        content: {
-            width: BACKGROUND_AREA_WIDTHS.COMPACT,
-        },
-
-        overlay: {
-            width: BACKGROUND_AREA_WIDTHS.DEFAULT,
-        },
-    },
+    layout: LAYOUTS.HERO,
 };

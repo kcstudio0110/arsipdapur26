@@ -12,13 +12,13 @@ export function SplitImage({ config }: SplitMediaProps) {
     }
 
     return (
-        <div className="relative w-full">
+        <div className="relative w-full overflow-hidden rounded-2xl">
             <Image
                 src={config.image.desktop}
                 alt={config.image.alt}
                 width={config.image.width}
                 height={config.image.height}
-                className="block h-auto w-full rounded-2xl"
+                className="block h-auto w-full"
                 {...config.imageProps}
             />
         </div>

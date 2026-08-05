@@ -1,5 +1,5 @@
 export const LOGO_SIZE = {
-    HEADER: "w-36 lg:w-52",
+    HEADER: "w-44 lg:w-52",
 
     HERO: "w-48 lg:w-64",
 

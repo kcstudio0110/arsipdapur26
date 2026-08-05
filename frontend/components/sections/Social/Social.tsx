@@ -24,7 +24,7 @@ export function Social() {
                 )}
             </div>
 
-            <div className="mx-auto mt-8 grid max-w-5xl sm:grid-cols-2 sm:gap-5 md:grid-cols-4 xl:gap-10">
+            <div className="mx-auto mt-8 grid max-w-5xl grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-4 lg:gap-6 xl:gap-8">
                 {SOCIAL_ITEMS.map((item) => (
                     <SocialCard key={item.id} item={item} />
                 ))}

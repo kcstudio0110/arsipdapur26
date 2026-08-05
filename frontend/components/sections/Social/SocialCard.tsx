@@ -13,12 +13,14 @@ interface SocialCardProps {
 export function SocialCard({ item }: SocialCardProps) {
     return (
         <Link href={item.href} className="group">
-            <Card className="flex h-full flex-col gap-4 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+            <Card className="flex h-full flex-col gap-3 p-5 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg lg:gap-4 lg:p-6">
+                {/* Icon */}
                 <div className={item.brandColorClass}>
-                    <Icon name={item.icon} size={48} />
+                    <Icon name={item.icon} size={40} />
                 </div>
 
-                <div className="flex flex-1 flex-col gap-2">
+                {/* Content */}
+                <div className="flex flex-1 flex-col gap-1 lg:gap-2">
                     <div className={item.brandColorClass}>
                         <Typography variant={TYPOGRAPHY_VARIANTS.TITLE}>{item.title}</Typography>
                     </div>
@@ -28,10 +30,11 @@ export function SocialCard({ item }: SocialCardProps) {
                     </Typography>
                 </div>
 
-                <div className="flex items-center justify-between border-t pt-4">
+                {/* CTA */}
+                <div className="mt-2 flex items-center justify-between border-t border-[var(--border-primary)] pt-3 lg:mt-3 lg:pt-4">
                     <Typography variant={TYPOGRAPHY_VARIANTS.LABEL}>{item.action}</Typography>
 
-                    <Icon name="arrowRight" size={20} />
+                    <Icon name="arrowRight" size={18} />
                 </div>
             </Card>
         </Link>

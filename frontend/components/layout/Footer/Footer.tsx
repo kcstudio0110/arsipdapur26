@@ -7,35 +7,28 @@ import { SITE } from "@/config/site.config";
 export function Footer() {
     return (
         <footer className="border-t bg-[var(--primary)]">
-            <div className={`container mx-auto ${FOOTER_SPACING.SECTION}`}>
-                <div
-                    className={`mx-auto flex max-w-2xl flex-col items-center text-center ${FOOTER_SPACING.CONTENT}`}
-                >
-                    {/* Logo */}
-                    <Logo variant="cream" className={LOGO_SIZE.FOOTER} />
+            <div className="container mx-auto py-8 text-[var(--font-inverse)] lg:py-5">
+                <div className="mx-auto flex max-w-2xl flex-col items-center text-center">
+                    <Logo variant="cream" className="w-40 lg:w-52" />
 
-                    {/* Tagline */}
-                    <p className="font-script text-4xl">{SITE.tagline}</p>
+                    <p className="font-script text-3xl lg:text-4xl">{SITE.tagline}</p>
 
-                    {/* Description */}
-                    <p className="max-w-xl text-sm leading-none opacity-40">{SITE.description}</p>
+                    <p className="max-w-xl px-3 text-sm leading-relaxed opacity-40">
+                        {SITE.description}
+                    </p>
 
-                    {/* Social */}
-                    <div className="flex items-center gap-3 pt-6 pb-2 opacity-90">
+                    <div className="flex flex-wrap justify-center gap-x-4 gap-y-2 pt-6 pb-3 opacity-90">
                         {FOOTER_CONFIG.socials.map((social) => (
-                            <Link key={social.label} href={social.href} variant="inverse">
+                            <Link key={social.id} href={social.href} variant="inverse">
                                 {social.label}
                             </Link>
                         ))}
                     </div>
 
-                    <div className="w-1/2 border-t border-[var(--border-primary)]/40" />
+                    <div className="w-24 border-t border-[var(--border-primary)]/40 lg:w-1/2" />
 
-                    {/* Copyright */}
-                    <div className="mt-2 text-center text-xs opacity-50">
-                        <p>
-                            © {new Date().getFullYear()} {SITE.company}
-                        </p>
+                    <div className="mt-3 text-center text-xs opacity-50">
+                        © {new Date().getFullYear()} {SITE.company}
                     </div>
                 </div>
             </div>

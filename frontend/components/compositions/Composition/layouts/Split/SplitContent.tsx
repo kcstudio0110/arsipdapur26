@@ -2,14 +2,14 @@
 
 import { Button } from "@/components/ui/Button";
 import { Icon } from "@/components/ui/Icon";
+import { Tag } from "@/components/ui/Tag";
 import { Typography, TYPOGRAPHY_VARIANTS } from "@/components/ui/Typography";
 
 import { cn } from "@/lib/cn";
 
 import { SPLIT_AREA_WIDTHS, SPLIT_AREA_WIDTH_CLASSES } from "./Split.constants";
 
-import type { SplitContentConfig, SplitAreaLayout } from "./Split.types";
-import { Tag } from "@/components/ui/Tag";
+import type { SplitAreaLayout, SplitContentConfig } from "./Split.types";
 
 interface Props {
     config: SplitContentConfig;
@@ -21,7 +21,7 @@ export function SplitContent({ config, layout }: Props) {
 
     return (
         <div className="flex flex-1 flex-col justify-center">
-            <div className={cn("space-y-2", SPLIT_AREA_WIDTH_CLASSES[width])}>
+            <div className={cn("space-y-3 lg:space-y-2", SPLIT_AREA_WIDTH_CLASSES[width])}>
                 {config.eyebrow && (
                     <Typography as="p" variant={TYPOGRAPHY_VARIANTS.OVERLINE}>
                         {config.eyebrow}
@@ -47,7 +47,7 @@ export function SplitContent({ config, layout }: Props) {
                 )}
 
                 {config.buttons && config.buttons.length > 0 && (
-                    <div className="flex flex-wrap gap-3 pt-2">
+                    <div className="flex flex-col gap-3 pt-2 sm:flex-row sm:flex-wrap">
                         {config.buttons.map((button) => (
                             <Button
                                 key={button.href}
@@ -56,6 +56,7 @@ export function SplitContent({ config, layout }: Props) {
                                 size={button.size ?? "sm"}
                                 startIcon={button.startIcon && <Icon name={button.startIcon} />}
                                 endIcon={button.endIcon && <Icon name={button.endIcon} />}
+                                className="w-full sm:w-auto"
                             >
                                 {button.label}
                             </Button>
@@ -63,8 +64,8 @@ export function SplitContent({ config, layout }: Props) {
                     </div>
                 )}
 
-                {config.tags && (
-                    <div className="mt-6 flex flex-wrap gap-2">
+                {config.tags && config.tags.length > 0 && (
+                    <div className="flex flex-wrap gap-2 pt-3 lg:pt-4">
                         {config.tags.map((tag) => (
                             <Tag key={tag.label} label={tag.label} />
                         ))}

@@ -2,14 +2,14 @@ import { cn } from "@/lib/cn";
 
 import { BACKGROUND_OVERLAY_WIDTH_CLASSES, BACKGROUND_AREA_WIDTHS } from "./Background.constants";
 
-import type { BackgroundOverlayLayout } from "./Background.types";
+import type { LayoutDesktopPreset } from "../../presets";
 
 type Props = {
-    layout?: BackgroundOverlayLayout;
+    layout: LayoutDesktopPreset["overlay"];
 };
 
 export function BackgroundOverlay({ layout }: Props) {
-    const width = layout?.width ?? BACKGROUND_AREA_WIDTHS.DEFAULT;
+    const width = layout.width ?? BACKGROUND_AREA_WIDTHS.DEFAULT;
 
     return (
         <div className="absolute inset-0 z-10">

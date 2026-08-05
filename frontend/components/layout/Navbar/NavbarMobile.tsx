@@ -60,7 +60,9 @@ export function NavbarMobile({ className = "" }: NavbarProps) {
                         {/* Hamburger */}
                         <button
                             type="button"
-                            onClick={handleToggleMenu}
+                            onClick={() => {
+                                handleToggleMenu();
+                            }}
                             aria-label={isOpen ? "Close navigation" : "Open navigation"}
                             aria-expanded={isOpen}
                             aria-controls="mobile-navigation"
