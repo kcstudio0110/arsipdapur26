@@ -4,8 +4,6 @@ import { useEffect, useState } from "react";
 
 import { Container } from "@/components/layout/Container";
 
-import { Logo, LOGO_SIZE } from "@/components/branding/Logo";
-
 import { Button } from "@/components/ui/Button";
 import { Icon, ICON_SIZES } from "@/components/ui/Icon";
 import { Link } from "@/components/ui/Link";
@@ -18,6 +16,7 @@ import { NAVBAR_ITEMS } from "./Navbar.constants";
 import type { NavbarProps } from "./Navbar.types";
 
 import { cn } from "@/lib/cn";
+import { Logo, LOGO_SIZE } from "@/components/branding/Logo";
 
 export function NavbarMobile({ className = "" }: NavbarProps) {
     const [isOpen, setIsOpen] = useState(false);
