@@ -1,26 +1,26 @@
 [project]
-name = "backend"
+name = "arsip-dapur-backend"
 version = "0.1.0"
-description = "Add your description here"
+description = "Backend API for Arsip Dapur Inventory System"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = "==3.13.*"
 dependencies = [
-    "alembic>=1.19.0",
-    "asyncpg>=0.31.0",
-    "fastapi>=0.141.1",
-    "pwdlib[argon2]>=0.3.0",
-    "pydantic>=2.13.4",
-    "pydantic-settings>=2.14.2",
-    "python-dotenv>=1.2.2",
-    "python-jose>=3.5.0",
-    "sqlalchemy>=2.0.51",
-    "structlog>=26.1.0",
-    "uvicorn>=0.52.1",
+    "alembic==1.19.0",
+    "asyncpg==0.31.0",
+    "fastapi==0.141.1",
+    "pwdlib[argon2]==0.3.0",
+    "pydantic==2.13.4",
+    "pydantic-settings==2.14.2",
+    "python-dotenv==1.2.2",
+    "python-jose==3.5.0",
+    "sqlalchemy==2.0.51",
+    "structlog==26.1.0",
+    "uvicorn==0.52.1",
 ]
 
 [dependency-groups]
 dev = [
-    "pytest>=9.1.1",
-    "pytest-asyncio>=1.4.0",
-    "ruff>=0.16.1",
+    "pytest==9.1.1",
+    "pytest-asyncio==1.4.0",
+    "ruff==0.16.1",
 ]

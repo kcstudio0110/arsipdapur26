@@ -1,0 +1,6 @@
+"""
+Core application components.
+
+Contains configuration, logging, and security utilities shared
+across the entire application.
+"""
