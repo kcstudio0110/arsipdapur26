@@ -68,4 +68,10 @@ export const redirects: QRRedirect[] = [
         destination: LINKS.internal.home,
         active: true,
     },
+    {
+        id: "QR-0012",
+        slug: "packaging",
+        destination: LINKS.internal.home,
+        active: true,
+    },
 ];
