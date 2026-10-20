@@ -5,56 +5,49 @@ export const AFFILIATE_REDIRECT_TARGETS: AffiliateRedirectTarget[] = [
         platform: "sh",
         affiliateCode: "X7K9P",
         productCode: "ARD-NGK",
-        destinationUrl:
-            "https://shopee.co.id/Bumbu-Nasi-Goreng-Kencur-%E2%80%93-Bumbu-Instan-Arsip-Dapur-26-i.818703351.22019923738",
+        destinationUrl: "https://s.shopee.co.id/7KxtzAPoFa",
         active: true,
     },
     {
         platform: "sh",
         affiliateCode: "X7K9P",
         productCode: "ARD-BWK",
-        destinationUrl:
-            "https://shopee.co.id/Bumbu-Woku-%E2%80%93-Bumbu-Instan-Arsip-Dapur-26-i.818703351.20638546750",
+        destinationUrl: "https://s.shopee.co.id/3VlBQ9LEvR",
         active: true,
     },
     {
         platform: "sh",
         affiliateCode: "X7K9P",
         productCode: "ARD-BRC",
-        destinationUrl:
-            "https://shopee.co.id/Bumbu-Rica-%E2%80%93-Bumbu-Instan-Arsip-Dapur-26-i.818703351.22461671239",
+        destinationUrl: "https://s.shopee.co.id/8fTHZdF6Zc",
         active: true,
     },
     {
         platform: "sh",
         affiliateCode: "X7K9P",
         productCode: "ARD-BMS",
-        destinationUrl:
-            "https://shopee.co.id/Bumbu-Sate-Manis-%E2%80%93-Bumbu-Instan-Arsip-Dapur-26-i.818703351.23001990478",
+        destinationUrl: "https://s.shopee.co.id/1gJXEqH314",
         active: true,
     },
     {
         platform: "sh",
         affiliateCode: "X7K9P",
         productCode: "ARD-BLH",
-        destinationUrl:
-            "https://shopee.co.id/Bumbu-Lado-Hijau-%E2%80%93-Bumbu-Instan-Arsip-Dapur-26-i.818703351.22822836975",
+        destinationUrl: "https://s.shopee.co.id/7VHKBXx6JD",
         active: true,
     },
     {
         platform: "sh",
         affiliateCode: "X7K9P",
         productCode: "ARD-BBJ",
-        destinationUrl:
-            "https://shopee.co.id/Bumbu-Banjar-%E2%80%93-Bumbu-Instan-Arsip-Dapur-26-i.818703351.19224002940",
+        destinationUrl: "https://s.shopee.co.id/2BFnpiMc05",
         active: true,
     },
     {
         platform: "sh",
         affiliateCode: "X7K9P",
         productCode: "ARD-BKB",
-        destinationUrl:
-            "https://shopee.co.id/Bumbu-Kentang-Balado-%E2%80%93-Bumbu-Instan-Arsip-Dapur-26-i.818703351.19574930143",
+        destinationUrl: "https://s.shopee.co.id/8KqRB3xhVR",
         active: true,
     },
 ];
