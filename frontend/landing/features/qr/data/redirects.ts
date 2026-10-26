@@ -70,7 +70,19 @@ export const redirects: QRRedirect[] = [
     },
     {
         id: "QR-0012",
-        slug: "packaging",
+        slug: "packaging", //untuk packaging general, tidak spesifik ke produk tertentu
+        destination: LINKS.internal.home,
+        active: true,
+    },
+    {
+        id: "QR-0013",
+        slug: "ayam-fillet-bakar-manis",
+        destination: LINKS.internal.home,
+        active: true,
+    },
+    {
+        id: "QR-0014",
+        slug: "tongkol-cabai-hijau",
         destination: LINKS.internal.home,
         active: true,
     },
